@@ -1,14 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html {
   font-size: 10px;
-  background: url('./background.jpg') bottom center;
-  background-size: cover;
+  background-image: radial-gradient(circle at 100% 0%, #ffd46c 0, #fed664 7.14%, #ecd65c 14.29%, #d7d656 21.43%, #c1d551 28.57%, #a8d34f 35.71%, #8cd04e 42.86%, #6acc50 50%, #3bc755 57.14%, #00c35d 64.29%, #00bf68 71.43%, #00bb75 78.57%, #00b784 85.71%, #00b494 92.86%, #00b1a6 100%);  background-size: cover;
 }
 
-body,html {
+body,html, kbd {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-}
+  font-family: 'Open Sans', sans-serif;}
 
 .keys {
   display: flex;
@@ -16,16 +16,17 @@ body,html {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  
 }
 
 .key {
-  border: .4rem solid black;
-  border-radius: .5rem;
+  border: .2rem solid rgba(255, 255, 255, 0.274);
+  border-radius: 20%;
   margin: 1rem;
-  font-size: 1.5rem;
-  padding: 1rem .5rem;
-  transition: all .07s ease;
-  width: 10rem;
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  transition: all 0.20s ease-in-out;
+  width: 9rem;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.4);
@@ -33,9 +34,9 @@ body,html {
 }
 
 .playing {
-  transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  transform: scale(0.9);
+  border-color: #f5f5f5;
+  box-shadow: 0 0 15px 5px #c9c8c4;
 }
 
 kbd {
